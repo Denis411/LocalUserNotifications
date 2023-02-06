@@ -75,6 +75,9 @@ struct ContentView: View {
             .background(Color.gray)
         }
         .background(Color.yellow)
+        .onAppear {
+            UIApplication.shared.applicationIconBadgeNumber = 0
+        }
     }
 }
 
